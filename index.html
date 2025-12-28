@@ -3,118 +3,128 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Orbidge Store</title>
+  <title>Orbidge Tropical Store</title>
   <style>
     body {
       margin: 0;
-      font-family: Arial, Helvetica, sans-serif;
-      background-color: #f5f7fa;
-      color: #333;
+      font-family: 'Trebuchet MS', sans-serif;
+      background: url('https://images.pexels.com/photos/457882/pexels-photo-457882.jpeg?auto=compress&cs=tinysrgb&w=1600') no-repeat center/cover;
+      color: #2b2b2b;
     }
-
     header {
-      background: linear-gradient(135deg, #4f46e5, #6366f1);
-      color: white;
-      padding: 2rem 1rem;
+      background: rgba(255, 255, 255, 0.85);
       text-align: center;
+      padding: 2rem;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.25);
     }
-
     header h1 {
       margin: 0;
-      font-size: 2.5rem;
+      font-size: 3rem;
+      color: #2a7f62;
+      text-shadow: 1px 1px #fff;
     }
-
     header p {
       margin-top: 0.5rem;
-      font-size: 1.1rem;
-      opacity: 0.9;
+      font-size: 1.4rem;
+      color: #3a533a;
     }
-
     main {
-      max-width: 900px;
-      margin: 3rem auto;
+      max-width: 960px;
+      margin: 2.5rem auto;
       padding: 0 1rem;
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
       gap: 2rem;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     }
-
-    .product {
-      background: white;
-      border-radius: 12px;
-      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
-      padding: 2rem;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-    }
-
-    .product h2 {
-      margin-top: 0;
-      font-size: 1.6rem;
-      color: #111827;
-    }
-
-    .product p {
-      line-height: 1.5;
-      margin: 1rem 0 2rem;
-      color: #4b5563;
-    }
-
-    .product a {
-      display: inline-block;
+    .product-card {
+      background: rgba(255, 255, 255, 0.95);
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.2);
       text-align: center;
-      text-decoration: none;
-      background-color: #4f46e5;
-      color: white;
-      padding: 0.75rem 1.25rem;
-      border-radius: 8px;
+      transition: transform 0.2s ease;
+    }
+    .product-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 8px 22px rgba(0,0,0,0.25);
+    }
+    .product-card img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+    }
+    .product-info {
+      padding: 1.5rem 1rem;
+    }
+    .product-info h2 {
+      font-size: 1.8rem;
+      margin: 0.5rem 0;
+      color: #185e40;
+    }
+    .product-info p.price {
+      font-size: 1.5rem;
+      color: #d45d00;
       font-weight: bold;
-      transition: background-color 0.2s ease;
+      margin: 0.6rem 0;
     }
-
-    .product a:hover {
-      background-color: #4338ca;
+    .product-info a.buy-btn {
+      display: inline-block;
+      margin-top: 1rem;
+      background: #28a745;
+      color: #fff;
+      text-decoration: none;
+      padding: 0.75rem 1.4rem;
+      border-radius: 8px;
+      font-size: 1rem;
+      font-weight: bold;
+      transition: background 0.2s ease;
     }
-
+    .product-info a.buy-btn:hover {
+      background: #1e7e34;
+    }
     footer {
       text-align: center;
-      padding: 2rem 1rem;
-      color: #6b7280;
+      padding: 1.5rem;
+      background: rgba(255,255,255,0.9);
       font-size: 0.9rem;
+      color: #333;
     }
   </style>
 </head>
 <body>
   <header>
-    <h1>Orbidge</h1>
-    <p>Your simple storefront for unique finds</p>
+    <h1>Orbidge Tropical Store</h1>
+    <p>Island vibes & sunny finds 🌴</p>
   </header>
 
   <main>
-    <div class="product">
-      <div>
+    <!-- Coconut Product -->
+    <div class="product-card">
+      <img src="https://m.media-amazon.com/images/I/81aM4sS0zVL._AC_SL1500_.jpg" alt="Bob's Red Mill Shredded Coconut">
+      <div class="product-info">
         <h2>Coconuts</h2>
-        <p>High-quality unsweetened shredded coconut, perfect for baking, cooking, and snacking.</p>
+        <p class="price">$15.98</p>
+        <a href="https://www.amazon.ca/Bobs-Red-Mill-Unsweetened-Shredded/dp/B07BG6N1QT" target="_blank" class="buy-btn">
+          Buy on Amazon
+        </a>
       </div>
-      <a href="https://www.amazon.ca/Bobs-Red-Mill-Unsweetened-Shredded/dp/B07BG6N1QT" target="_blank" rel="noopener noreferrer">
-        Buy on Amazon
-      </a>
     </div>
 
-    <div class="product">
-      <div>
+    <!-- Skis Product -->
+    <div class="product-card">
+      <img src="https://m.media-amazon.com/images/I/71H45PcYxWL._AC_SL1500_.jpg" alt="VEVOR 46 inch Water Skis">
+      <div class="product-info">
         <h2>Skis</h2>
-        <p>Adjustable training skis designed for stability and fun on the snow, great for beginners.</p>
+        <p class="price">$223.99</p>
+        <a href="https://www.amazon.ca/VEVOR-Adjustable-Double-Handle-Removable-Stabilizing/dp/B0F2S9PFRD" target="_blank" class="buy-btn">
+          Buy on Amazon
+        </a>
       </div>
-      <a href="https://www.amazon.ca/VEVOR-Adjustable-Double-Handle-Removable-Stabilizing/dp/B0F2S9PFRD" target="_blank" rel="noopener noreferrer">
-        Buy on Amazon
-      </a>
     </div>
   </main>
 
   <footer>
-    © 2025 Orbidge. All rights reserved.
+    © 2025 Orbidge • Your Tropical Marketplace 🌺
   </footer>
 </body>
 </html>
