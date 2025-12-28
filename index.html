@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Orbidge Store</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: #f5f7fa;
+      color: #333;
+    }
+
+    header {
+      background: linear-gradient(135deg, #4f46e5, #6366f1);
+      color: white;
+      padding: 2rem 1rem;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+
+    header p {
+      margin-top: 0.5rem;
+      font-size: 1.1rem;
+      opacity: 0.9;
+    }
+
+    main {
+      max-width: 900px;
+      margin: 3rem auto;
+      padding: 0 1rem;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 2rem;
+    }
+
+    .product {
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+      padding: 2rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .product h2 {
+      margin-top: 0;
+      font-size: 1.6rem;
+      color: #111827;
+    }
+
+    .product p {
+      line-height: 1.5;
+      margin: 1rem 0 2rem;
+      color: #4b5563;
+    }
+
+    .product a {
+      display: inline-block;
+      text-align: center;
+      text-decoration: none;
+      background-color: #4f46e5;
+      color: white;
+      padding: 0.75rem 1.25rem;
+      border-radius: 8px;
+      font-weight: bold;
+      transition: background-color 0.2s ease;
+    }
+
+    .product a:hover {
+      background-color: #4338ca;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem 1rem;
+      color: #6b7280;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Orbidge</h1>
+    <p>Your simple storefront for unique finds</p>
+  </header>
+
+  <main>
+    <div class="product">
+      <div>
+        <h2>Coconuts</h2>
+        <p>High-quality unsweetened shredded coconut, perfect for baking, cooking, and snacking.</p>
+      </div>
+      <a href="https://www.amazon.ca/Bobs-Red-Mill-Unsweetened-Shredded/dp/B07BG6N1QT" target="_blank" rel="noopener noreferrer">
+        Buy on Amazon
+      </a>
+    </div>
+
+    <div class="product">
+      <div>
+        <h2>Skis</h2>
+        <p>Adjustable training skis designed for stability and fun on the snow, great for beginners.</p>
+      </div>
+      <a href="https://www.amazon.ca/VEVOR-Adjustable-Double-Handle-Removable-Stabilizing/dp/B0F2S9PFRD" target="_blank" rel="noopener noreferrer">
+        Buy on Amazon
+      </a>
+    </div>
+  </main>
+
+  <footer>
+    © 2025 Orbidge. All rights reserved.
+  </footer>
+</body>
+</html>
